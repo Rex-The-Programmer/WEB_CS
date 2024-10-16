@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="external.css">
+</head>
+<body>
+    <section class="welcome-section">
+
+        <header class="navigation">
+            <nav class="navigation">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/38dfdeebb6ac748bfad35485ef1b80f016dec893e3f0806a3a2754f75c086f8e?placeholderIfAbsent=true&apiKey=51258e897dbc432a9432b84dfe1f2ad7" alt="League of Legends Logo" class="logo" />
+                <div class="hamburger-menu" id="hamburgerMenu" onclick="toggleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="white">
+                        <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+                    </svg>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="patchnote.html" class="nav-item">Latest Patch Note</a></li>
+                    <li><a href="champions.html" class="nav-item">Champions</a></li>
+                    <li><a href="figma.html" class="nav-item">Home</a></li>
+                    <li><a href="pick a role.html" class="nav-item">Pick a Role</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1 class="section-title">WELCOME TO THE RIFT</h1>
+        <div class="intro-container">
+            <div class="intro-header">
+                <div class="intro-logo-text">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ac0823764c5cd75532e669d824df2249dfecaa525adf6bc7741041fd8440b3be?placeholderIfAbsent=true&apiKey=51258e897dbc432a9432b84dfe1f2ad7" alt="Learn the basics illustration" class="intro-image" />
+                    <div class="intro-text-container">
+                        <h2>Learn the basics</h2>
+                        <p class="intro-text">League of Legends is a team-based strategy game where two teams of five powerful champions face off to destroy the other's base. Choose from over 140 champions to make epic plays, secure kills, and take down towers as you battle your way to victory.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="nexus-section">
+            <div class="nexus-content">
+                <div class="nexus-info">
+                    <h2 class="nexus-title">Destroy the Base</h2>
+                    <p class="nexus-description">The Nexus is the heart of both teams' bases. Destroy the enemy's Nexus first to win the game.</p>
+                    <h3 class="color-picker">Pick a Nexus</h3>
+                    <div class="color-options">
+                        <button class="image-button1" onclick="btn11()">
+                            <img src="sources/Blue_Nexus.webp" alt="Blue team color option" class="color-option" />
+                        </button>
+                        <button class="image-button2" onclick="btn22()" >
+                            <img src="sources/Red_Nexus.webp" alt="Red team color option" class="color-option" />
+                        </button>
+                    </div>
+                </div>
+                <div class="nexus-visual">
+                    <h3 class="nexus-title" id="nexusTitle" >Blue Nexus</h3>
+                    <img loading="lazy" src="sources/blueNexus.jpg" alt="Blue Nexus illustration" class="nexus-image"/>
+                    <p class="nexus-details">Your Nexus is where minions spawn. Behind your Nexus is the Fountain, where you can quickly replenish health and mana and access the Shop.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="path-section">
+            <div class="path-content">
+                <div class="path-info">
+                    <h2 class="path-title">Clear the Path</h2>
+                    <p class="path-description">Your team needs to clear at least one lane to get to the enemy Nexus. Blocking your path are defense structures called turrets and inhibitors. Each lane has three turrets and one inhibitor, and each Nexus is guarded by two turrets.</p>
+                    <h3 class="structure-picker">Pick a structure</h3>
+                    <div class="structure-options">
+                        <button class="image-button3" onclick="btn33()">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/639f4a0c9edf148bead0a67b7934a0db06da2dd13aae6d2c934f41a814973279?placeholderIfAbsent=true&apiKey=51258e897dbc432a9432b84dfe1f2ad7" alt="Turret structure option" class="structure-option" />
+                        </button>
+                        <button class="image-button4" onclick="btn44()">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c5615232a7a7cc7fa542b515d68dc76efef836375c4326b2b182df65027ac722?placeholderIfAbsent=true&apiKey=51258e897dbc432a9432b84dfe1f2ad7" alt="Inhibitor structure option" class="structure-option" />
+                        </button>
+                    </div>
+                </div>
+                <div class="turret-info">
+                    <h3 class="structure" id="structureTitle" >Turret</h3>
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/86c7415be0c6d1363de746db6c92e77d22df144482955f789b7ad6b8df312af0?placeholderIfAbsent=true&apiKey=51258e897dbc432a9432b84dfe1f2ad7" alt="Turret illustration" class="turret-image" />
+                    <p class="turret-description">Turrets deal damage to enemy minions and champions, and provide limited vision from the Fog of War for their team. Attack these structures with minions ahead of you to avoid damage and charge ahead.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="jungle-section">
+            <div class="jungle-content">
+                <div class="jungle-info">
+                    <h2 class="jungle-title">Take on the Jungle</h2>
+                    <p class="jungle-description">In between the lanes is the jungle, where neutral monsters and jungle plants reside. The two most important monsters are Baron Nashor and the Drakes. Killing these units grants unique buffs for your team and can also turn the tide of the game.</p>
+                    <h3 class="structure-picker">Pick a creature</h3>
+                    <div class="monster-options">
+                        <button class="image-button5" onclick="btn55()">
+                            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/20cc6cbe73fa3a91241a7112180f0c274d1ced0964c30ceaf1f82edf354a5d6c?placeholderIfAbsent=true&apiKey=51258e897dbc432a9432b84dfe1f2ad7" alt="Baron Nashor monster option" class="monster-option" />
+                        </button>
+                        <button class="image-button6" onclick="btn66()">
+                            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/bf6b58c27d7a9269b06eb3cdc01a7b92d61f5eb923c0ce56dc84cf2ff350e019?placeholderIfAbsent=true&apiKey=51258e897dbc432a9432b84dfe1f2ad7" alt="Drake monster option" class="monster-option" />
+                        </button>
+                    </div>
+                </div>
+                <div class="drake-info">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3d196e1563bdc1001367da5a11a7a3bf51e9727570aaf0ee0d6dec297c1f6d40?placeholderIfAbsent=true&apiKey=51258e897dbc432a9432b84dfe1f2ad7" alt="Drake illustration" class="drake-image" />
+                    <h3 class="drake-title" id="objectives" >Drakes</h3>
+                    <p class="drake-description">Drakes, or dragons, are powerful monsters that grant unique bonuses depending on the element of the drake your team slays. There are five Elemental Drakes and one Elder Dragon.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script defer src="script.js"></script>
+</body>
+</html>

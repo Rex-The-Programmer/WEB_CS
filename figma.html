@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="external.css">
+        <title>Homepage</title>
+
+    </head>
+    <body>
+        <main class="master-rift-container">
+            <img src="sources/lol.jpg" alt="" class="background-image" />
+            <nav class="navigation">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/38dfdeebb6ac748bfad35485ef1b80f016dec893e3f0806a3a2754f75c086f8e?placeholderIfAbsent=true&apiKey=51258e897dbc432a9432b84dfe1f2ad7" alt="League of Legends Logo" class="logo" />
+                <div class="hamburger-menu" id="hamburgerMenu" onclick="toggleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="white">
+                        <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+                    </svg>
+                </div>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="patchnote.html" class="nav-item">Latest Patch Note</a></li>
+                    <li><a href="champions.html" class="nav-item">Champions</a></li>
+                    <li><a href="about.html" class="nav-item">About</a></li>
+                    <li><a href="pick a role.html" class="nav-item">Pick a Role</a></li>
+                </ul>
+            </nav>
+            <h1 class="main-title">Master the Rift</h1>
+            <p class="subtitle">Summoner's Rift today, but life's goals slipping away?</p>
+            <a href="#" class="cta-button" id="signup-btn">SIGN UP FOR FREE</a>
+
+            <div class="modal" id="signup-modal">
+                <div class="modal-content">
+                    <span class="close-btn" id="close-btn">&times;</span>
+                    <h2>Sign Up</h2>
+                    <h4>Before You Enter the Rift, Make Sure You Control the Game—Not the Other Way Around.</h4>
+                    <form id="signup-form">
+                        <input type="text" class="form-input" placeholder="Username" required>
+                        <input type="email" class="form-input" placeholder="Email" required>
+                        <input type="password" class="form-input" placeholder="Password" required>
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <button type="button" class="modal-close-btn" id="modal-close-btn">Close</button>
+                    </form>
+                </div>
+            </div>
+    
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <p class="copyright">© 2024 Riot Games, Inc. All Rights Reserved.</p>
+                    <div class="footer-links">
+                        <a href="https://www.riotgames.com/en">Riot Games</a>
+                        <a href="https://www.leagueoflegends.com/en-ph/">League of Legends</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+        <script defer src="script.js"></script>   
+    </body>
+</html>

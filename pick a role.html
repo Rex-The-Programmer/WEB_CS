@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>role</title>
+    <link rel="stylesheet" href="external.css">
+</head>
+<body>
+    <section class="choose-lane-section">
+        <header class="navigation">
+            <nav class="navigation">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/38dfdeebb6ac748bfad35485ef1b80f016dec893e3f0806a3a2754f75c086f8e?placeholderIfAbsent=true&apiKey=51258e897dbc432a9432b84dfe1f2ad7" alt="League of Legends Logo" class="logo" />
+                <div class="hamburger-menu" id="hamburgerMenu" onclick="toggleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="white">
+                        <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+                    </svg>
+                </div>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="patchnote.html" class="nav-item">Latest Patch Note</a></li>
+                    <li><a href="champions.html" class="nav-item">Champions</a></li>
+                    <li><a href="about.html" class="nav-item">About</a></li>
+                    <li><a href="figma.html" class="nav-item">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="content-section">
+            <div class="content-wrapper">
+                <div class="main-content">
+                    <h1 class="section-title">Choose your Lane</h1>
+                    <div class="description-container">
+                        <p class="description-text">
+                            There are five positions that make up the recommended team comp for the game. Each lane lends itself to certain kinds of champions and roles—try them all or lock in to the lane that calls you.
+                        </p>
+                        <div class="image-gallery">
+                            <button class="image-button1" onclick="btn1()">
+                                <img loading="lazy" src="sources/topLogo.jpg" class="gallery-image-alt" alt="Lane position 1" />
+                            </button>
+                            <button class="image-button2" onclick="btn2()">
+                                <img loading="lazy" src="sources/jungleLogo.png" class="gallery-image-alt" alt="Lane position 2" />
+                            </button>
+                            <button class="image-button3" onclick="btn3()">
+                                <img loading="lazy" src="sources/midLogo.jpg" class="gallery-image-alt" alt="Lane position 3" />
+                            </button>
+                            <button class="image-button4" onclick="btn4()">
+                                <img loading="lazy" src="sources/botlaneLogojpg.jpg" class="gallery-image-alt" alt="Lane position 4" />
+                            </button>
+                            <button class="image-button5" onclick="btn5()">
+                                <img loading="lazy" src="sources/supportLogo.jpg" class="gallery-image-alt" alt="Lane position 5" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="lane-title-container">
+                        <h3 class="lane-title"></h3>
+                    </div>
+                </div>
+                <img loading="lazy" src="sources/top.jpg" class="main-image" alt="Top lane overview" />
+            </div>
+
+            <h2 class="subtitle">Preferred Champions to play</h2>
+            <div class="champions-section">
+                <div class="champions-container">
+                    <div class="champions-column">
+                        <div class="champions-grid">
+                            <div class="champion-card">
+                                <img loading="lazy" src="sources/voli.png" class="champion-image1" alt="" />
+                                <span class="champion-name-centered1"></span>
+                            </div>
+                            <div class="champion-card">
+                                <img loading="lazy" src="sources/voli.png" class="champion-image2" alt="" />
+                                <span class="champion-name-centered2"></span>
+                            </div>
+                            <div class="champion-card">
+                                <img loading="lazy" src="sources/voli.png" class="champion-image3" alt="" />
+                                <span class="champion-name-centered3"></span>
+                            </div>
+                            <div class="champion-card">
+                                <img loading="lazy" src="sources/voli.png" class="champion-image4" alt="" />
+                                <span class="champion-name-centered4"></span>
+                            </div>
+                            <div class="champion-card">
+                                <img loading="lazy" src="sources/voli.png" class="champion-image5" alt="" />
+                                <span class="champion-name-centered5"></span>
+                            </div>
+                            <div class="champion-card">
+                                <img loading="lazy" src="sources/voli.png" class="champion-image6" alt="" />
+                                <span class="champion-name-centered6"></span>
+                            </div>
+                            <div class="champion-card">
+                                <img loading="lazy" src="sources/voli.png" class="champion-image7" alt="" />
+                                <span class="champion-name-centered7"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="description-column">
+                    <p class="lane-description">
+                        
+                    </p>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
